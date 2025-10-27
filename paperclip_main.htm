@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta title="Paper Clip Knockoff Game">
+    <script src="paperclip_scripts.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="paperclip_styling.css">
+</head>
+
+<body>
+
+    <h1 class="center">Welcome to<br>Paperclip Knockoff Game!</h1>
+    <a href="paperclip_about.htm">
+        <button type="button" class="right">About</button>
+    </a>
+    <h3>Importing/Exporting Data</h3>
+
+    <button type="button" onclick="export_data()">Click me to export data!</button>
+
+    <input type="file" id="csvInput" accept=".csv">
+
+    <div class="column">
+        <div class="purchase_col">
+            <h3>Number of Managers:</h3>
+            <p id="manager">0 </p>
+            <h4>Cost of a Manager:</h4>
+            <p id="mgr_cost">10</p>
+        </div>
+        <div class="center purchase_col">
+            <h3>Number of Paperclips:</h3>
+            <p id="paperclip">0</p>
+            <img src="https://static.gosquared.com/images/april/clippy/icon_clippy_01.png" , alt="clickme!" ,
+                style="cursor:pointer;" onclick="increase()">
+            <p><b>Paperclips per second: </b><a id="per_second">0</a></p>
+
+        </div>
+
+    </div>
+
+    <button type="button" onclick="manager()">Purchase Manager</button>
+
+</body>
+
+</html>

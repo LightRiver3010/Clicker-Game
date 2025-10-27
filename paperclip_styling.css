@@ -1,0 +1,30 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    float: middle;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: center;
+}
+
+.headshot {
+    position: absolute;
+    width: 300px;
+    border: 5px solid lavender;
+    right: 200px;
+}
+
+.column {
+    display: flex;
+}
+
+.purchase_col {
+    background-color: grey;
+}
